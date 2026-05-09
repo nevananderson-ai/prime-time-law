@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Free Quote | Prime Time Lawn Care &amp; Landscaping</title>
+  <meta name="description" content="Get a free flat-rate lawn care quote from Prime Time Lawn Care &amp; Landscaping. Serving Citrus Ridge, Davenport, Haines City, and Central Florida. Response within one business day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="site.config.js"></script>
+</head>
+<body>
+
+<div id="header-mount"></div>
+
+<main>
+
+  <section class="cta-section section" style="min-height:80vh;display:flex;align-items:center">
+    <div class="container" style="width:100%">
+      <div class="cta-grid">
+
+        <div class="cta-content">
+          <p class="eyebrow">Free Quote</p>
+          <h1 style="color:var(--white);font-size:clamp(2rem,4vw,3rem)">Get a flat-rate quote for your yard.</h1>
+          <p style="color:rgba(255,255,255,0.7)">Tell us your address and what you need. We'll send a no-surprise price within one business day.</p>
+          <div class="trust-strip" style="margin-top:0">
+            <span class="trust-item" style="color:rgba(255,255,255,0.6)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Licensed &amp; Insured
+            </span>
+            <span class="trust-item" style="color:rgba(255,255,255,0.6)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              No contracts
+            </span>
+            <span class="trust-item" style="color:rgba(255,255,255,0.6)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Response within 1 business day
+            </span>
+          </div>
+          <p style="color:rgba(255,255,255,0.5);font-size:0.875rem;margin-top:0.5rem">
+            Prefer to call? <a href="tel:8632057840" style="color:rgba(255,255,255,0.8);text-decoration:underline" data-site-phone-link data-site-phone>(863) 205-7840</a>
+          </p>
+        </div>
+
+        <div class="quote-form-wrap">
+          <form class="quote-form" action="#" method="post" novalidate aria-label="Get a free quote">
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website-q">Leave blank</label>
+              <input type="text" id="website-q" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="form-field">
+              <label for="q-name">Your name</label>
+              <input type="text" id="q-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="q-phone">Phone number</label>
+              <input type="tel" id="q-phone" name="phone" placeholder="(555) 123-4567" autocomplete="tel" required inputmode="tel" />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="q-address">Property address</label>
+              <input type="text" id="q-address" name="address" placeholder="123 Main St, Citrus Ridge, FL" autocomplete="street-address" required />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="q-service">Service interested in</label>
+              <select id="q-service" name="service">
+                <option value="">— Select a service —</option>
+                <option value="mowing">Weekly Mowing &amp; Edging</option>
+                <option value="fertilization">Fertilization &amp; Weed Control</option>
+                <option value="aeration">Aeration &amp; Overseeding</option>
+                <option value="hedge">Hedge &amp; Shrub Trimming</option>
+                <option value="cleanup">Seasonal Cleanup</option>
+                <option value="mulching">Mulching &amp; Bed Maintenance</option>
+                <option value="multiple">Multiple services</option>
+                <option value="unsure">Not sure — help me decide</option>
+              </select>
+            </div>
+            <button type="button" class="form-details-toggle">+ Add details (optional)</button>
+            <div class="form-field form-details-field">
+              <label for="q-details">Anything we should know about your yard?</label>
+              <textarea id="q-details" name="details" rows="3" placeholder="Yard size, gate code, specific concerns..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span class="btn-text">Get My Free Quote</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form-footer-note">We'll text you within one business day. No spam, no robo-calls.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script>mountComponents({ active: 'quote', prefix: '' });</script>
+</body>
+</html>

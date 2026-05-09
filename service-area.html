@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Area | Prime Time Lawn Care &amp; Landscaping — Citrus Ridge, FL</title>
+  <meta name="description" content="Prime Time Lawn Care serves Citrus Ridge, Davenport, Haines City, Four Corners, and ChampionsGate. Check your ZIP to confirm we come to you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="site.config.js"></script>
+</head>
+<body>
+
+<div id="header-mount"></div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Where We Work</p>
+      <h1>Lawn care in Citrus Ridge and across Central Florida.</h1>
+      <p>We service a 15-mile radius out of Citrus Ridge — covering five communities across Polk and Osceola counties.</p>
+    </div>
+  </section>
+
+  <!-- ZIP Checker -->
+  <section class="service-area-section section">
+    <div class="container">
+      <div class="service-area-grid">
+        <div class="area-map reveal" aria-label="Service area map">
+          <div class="map-radius" aria-hidden="true"></div>
+          <div class="map-center-dot" aria-hidden="true"></div>
+          <div class="map-city-dots">
+            <span class="map-city-chip primary">Citrus Ridge</span>
+            <span class="map-city-chip">Davenport</span>
+            <span class="map-city-chip">Haines City</span>
+            <span class="map-city-chip">Four Corners</span>
+            <span class="map-city-chip">ChampionsGate</span>
+          </div>
+          <p style="text-align:center;font-size:0.75rem;color:var(--green-mid);margin-top:1.5rem;max-width:none;">~15 mile radius from Citrus Ridge</p>
+        </div>
+        <div class="zip-checker reveal reveal-delay-1">
+          <p class="eyebrow">Quick Check</p>
+          <h2>Do we come to you?</h2>
+          <p class="text-muted">Enter your ZIP code to confirm we service your neighborhood.</p>
+          <form class="zip-form" role="search" aria-label="ZIP code check">
+            <label for="zip-input" class="sr-only">ZIP code</label>
+            <input type="text" id="zip-input" class="zip-input" inputmode="numeric" maxlength="5" placeholder="34741" autocomplete="postal-code" />
+            <button type="submit" class="btn btn-primary">Check ZIP</button>
+          </form>
+          <div class="zip-result" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- City blocks -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <p class="eyebrow reveal">Communities We Serve</p>
+      <h2 class="reveal reveal-delay-1" style="margin-bottom:3rem">Every neighborhood we cover.</h2>
+
+      <div style="display:flex;flex-direction:column;gap:3rem">
+
+        <div class="reveal" id="citrus-ridge" style="padding-bottom:3rem;border-bottom:1px solid var(--cream-border)">
+          <h2 style="font-size:1.5rem;margin-bottom:0.75rem">Citrus Ridge</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem">Our home base. We know Citrus Ridge inside and out — from the established neighborhoods along the lake to the newer builds off US-27. Weekly lawn care for homeowners throughout the community on a reliable, recurring schedule.</p>
+          <a href="quote.html" class="text-link">Get a quote in Citrus Ridge →</a>
+        </div>
+
+        <div class="reveal" id="davenport" style="padding-bottom:3rem;border-bottom:1px solid var(--cream-border)">
+          <h2 style="font-size:1.5rem;margin-bottom:0.75rem">Davenport</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem">Weekly lawn care for homeowners across Davenport — from the resort-area communities near I-4 to the residential streets heading toward downtown. We service the whole city on a consistent weekly cadence.</p>
+          <a href="quote.html" class="text-link">Get a quote in Davenport →</a>
+        </div>
+
+        <div class="reveal" id="haines-city" style="padding-bottom:3rem;border-bottom:1px solid var(--cream-border)">
+          <h2 style="font-size:1.5rem;margin-bottom:0.75rem">Haines City</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem">From the older Haines City neighborhoods to newer developments along Hwy 17, we provide reliable weekly lawn maintenance for homeowners throughout the area. Same crew, same day, every week.</p>
+          <a href="quote.html" class="text-link">Get a quote in Haines City →</a>
+        </div>
+
+        <div class="reveal" id="four-corners" style="padding-bottom:3rem;border-bottom:1px solid var(--cream-border)">
+          <h2 style="font-size:1.5rem;margin-bottom:0.75rem">Four Corners</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem">The Four Corners area spans the border of Polk, Osceola, Orange, and Lake counties — and we cover it. Whether you're in a newer subdivision or an established neighborhood, we bring the same professional service to every yard.</p>
+          <a href="quote.html" class="text-link">Get a quote in Four Corners →</a>
+        </div>
+
+        <div class="reveal" id="championsgate">
+          <h2 style="font-size:1.5rem;margin-bottom:0.75rem">ChampionsGate</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.25rem">ChampionsGate homeowners and HOA communities trust us to keep their yards looking sharp week after week. We understand the standards this community expects — and we meet them every visit.</p>
+          <a href="quote.html" class="text-link">Get a quote in ChampionsGate →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div style="max-width:560px;display:flex;flex-direction:column;gap:1.25rem">
+        <p class="eyebrow">Not Sure?</p>
+        <h2 style="color:var(--white)">Don't see your city listed?</h2>
+        <p style="color:rgba(255,255,255,0.7)">We're always evaluating where we can expand service. Send us your address and we'll let you know if we can help — or add you to our waitlist.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.5rem">
+          <a href="quote.html" class="btn btn-primary btn-lg">Check My Address</a>
+          <a href="tel:8632057840" class="btn btn-outline-light btn-lg" data-site-phone-link>Call (863) 205-7840</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script>mountComponents({ active: 'service-area', prefix: '' });</script>
+</body>
+</html>

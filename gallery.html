@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Prime Time Lawn Care &amp; Landscaping — Real Results</title>
+  <meta name="description" content="Before and after photos of real lawn transformations in Citrus Ridge, Davenport, and surrounding Central Florida communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="site.config.js"></script>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .gallery-item {
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--cream-border);
+    }
+    .gallery-item-imgs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .gallery-img-slot {
+      aspect-ratio: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-img-slot .img-placeholder {
+      aspect-ratio: 1;
+      font-size: 0.6875rem;
+      padding: 1rem;
+      line-height: 1.4;
+    }
+    .gallery-img-slot .ba-label {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      bottom: auto;
+    }
+    .gallery-item-meta {
+      padding: 1rem 1.25rem;
+    }
+    .gallery-item-meta h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      margin-bottom: 0.25rem;
+    }
+    .gallery-item-meta p {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      max-width: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-mount"></div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Our Work</p>
+      <h1>Real lawns. Real results.</h1>
+      <p>Every yard in this gallery belongs to a homeowner in our service area. No stock photos, no staged shots.</p>
+    </div>
+  </section>
+
+  <!-- Featured before/after slider -->
+  <section class="gallery-section section">
+    <div class="container">
+      <p class="eyebrow reveal">Featured Project</p>
+      <h2 class="reveal reveal-delay-1" style="margin-bottom:1.5rem">Before &amp; after.</h2>
+
+      <div class="ba-featured reveal" role="img" aria-label="Before and after lawn comparison">
+        <div class="ba-before">
+          <div class="ba-placeholder">PHOTO: Before — overgrown lawn, unedged borders, patchy turf</div>
+          <span class="ba-label" aria-hidden="true">Before</span>
+        </div>
+        <div class="ba-after">
+          <div class="ba-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid))">PHOTO: After — same lawn, clean edges, uniform cut, professional finish</div>
+          <span class="ba-label" aria-hidden="true">After</span>
+        </div>
+        <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Slide to compare before and after" />
+        <div class="ba-handle" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery grid -->
+  <section class="section" style="background:var(--white);padding-top:0">
+    <div class="container">
+      <h2 class="reveal" style="margin-bottom:0">More projects</h2>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — overgrown front yard</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — clean front yard</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>Citrus Ridge — Front Yard</h3>
+            <p>Weekly mowing &amp; edging</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — neglected backyard</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — restored backyard</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>Davenport — Backyard Restore</h3>
+            <p>Cleanup + aeration + overseeding</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — overgrown hedges</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — shaped hedges</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>ChampionsGate — Hedge Trim</h3>
+            <p>Hedge &amp; shrub trimming</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — patchy lawn with weeds</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — full, green lawn</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>Haines City — Fertilization Program</h3>
+            <p>Fertilization &amp; weed control</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — bare mulch beds</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — fresh mulch, clean edges</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>Four Corners — Bed Refresh</h3>
+            <p>Mulching &amp; bed maintenance</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-item-imgs">
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="height:100%">PHOTO: Before — fall debris, overgrown beds</div>
+              <span class="ba-label" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-slot">
+              <div class="img-placeholder" style="background:linear-gradient(145deg,var(--green-deep),var(--green-mid));height:100%">PHOTO: After — clean yard, fresh beds</div>
+              <span class="ba-label" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <div class="gallery-item-meta">
+            <h3>Citrus Ridge — Fall Cleanup</h3>
+            <p>Seasonal cleanup</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <div style="max-width:560px;display:flex;flex-direction:column;gap:1.25rem">
+        <p class="eyebrow">Your Yard Next</p>
+        <h2 style="color:var(--white)">Ready for results like these?</h2>
+        <p style="color:rgba(255,255,255,0.7)">Get a free flat-rate quote. We'll respond within one business day.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.5rem">
+          <a href="quote.html" class="btn btn-primary btn-lg">Get My Free Quote</a>
+          <a href="tel:8632057840" class="btn btn-outline-light btn-lg" data-site-phone-link>Call (863) 205-7840</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script>mountComponents({ active: 'gallery', prefix: '' });</script>
+</body>
+</html>

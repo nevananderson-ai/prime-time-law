@@ -246,6 +246,11 @@ p { max-width: var(--prose-width); }
 }
 
 .header-nav a:hover { color: var(--green-mid); }
+.header-nav a.active { color: var(--green-mid); font-weight: 500; }
+
+@media (min-width: 900px) {
+  .header-quote-btn { display: inline-flex !important; }
+}
 
 .header-actions {
   display: flex;
